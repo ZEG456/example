@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="1000" stlye="border:1px solid #d3d3d3;"></canvas>
+<script>
+let c = document.getElementById("myCanvas");
+let cxt = c.getContext("2d");
+cxt.fillStyle = "blue";
+cxt.fillRect(50, 50, 100, 100);
+
+cxt.globalAlpha = 0.3;
+cxt.fillStyle = "red";
+cxt.fillRect(100, 100, 100, 100);
+
+cxt.beginPath();
+cxt.moveTo(50, 250);
+cxt.lineTo(500, 250);
+cxt.lineWidth = 15;
+cxt.strokeStyle = "#ff0000";
+cxt.lineCap = "butt";
+cxt.stroke();
+
+
+cxt.beginPath();
+cxt.moveTo(50, 300);
+cxt.lineTo(500, 300);
+cxt.lineWidth = 15;
+cxt.strokeStyle = "#00ff00";
+cxt.lineCap = "round";
+cxt.stroke();  
+
+
+cxt.beginPath();
+cxt.moveTo(50, 350);
+cxt.lineTo(500, 350);
+cxt.lineWidth = 15;
+cxt.strokeStyle = "#0000ff";
+cxt.lineCap = "square";
+cxt.stroke();
+
+cxt.beginPath();
+cxt.moveTo(75,50);
+cxt.lineTo(100,75);
+cxt.lineTo(100,25);
+cxt.fill();
+
+cxt.beginPath();
+cxt.moveTo(75,250);
+cxt.lineTo(250,100);
+cxt.lineTo(250,400);
+cxt.fillStyle = "blue"
+cxt.fill();
+</script>
+</body>
+</html>

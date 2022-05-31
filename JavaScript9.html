@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>power</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	/*function factorial(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result = result *i; 
+  }
+  return result;
+}
+let n = prompt("Введите n:", '');
+
+if (n <= 1) {
+  alert('За умовами задачі, необхідно щоб n було більше або дорівнює 1');
+} else {
+  alert(factorial (n) );
+}*/
+/*let n = 15.3626;
+alert( n. toFixed(1) );
+alert( n. toFixed(2) );
+alert( n. toFixed(3) );
+/*alert( 0.1 + 0.2 );
+let result = 0.1 + 0.2;
+alert( +result.toFixed(1) );*/
+/*let x = prompt("Ведіть будь-яке значення:", "-3.14");
+if (isNaN(x)) {
+	alert( "Це NaN - не число" );
+} else {
+	alert( "Ви вели число" );
+}*/
+/*let x = prompt("Ведіть будь-яке значення:", "-3.14");
+while(isNaN(x)) {
+	alert( "Це NaN - не число" );
+	x = prompt("Ведіть будь-яке значення:", "-3.14");
+} 
+	alert( "Ви вели число "+x );*/
+	let y = +prompt("Ведіть будь-яке значення від 0 до 1:", 0.1);
+	let x = +prompt("Ведіть будь-яке значення від 0 до 1:", 0.1);
+	if (x>0&&x<1&&y>0&&y<1){
+		alert( (x + y).toFixed(2) );
+}else{
+	alert ("Ведіть числа з вказаного діапазону");
+}
+</script>
+</body>
+</html>

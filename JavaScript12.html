@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="1000" height="1000" stlye="border:1px solid #d3d3d3;"></canvas>
+<script>
+let canvas = document.getElementById("myCanvas");
+let cxt = canvas.getContext("2d");
+
+cxt.beginPath();
+cxt.arc(300, 300, 100, Math.PI*2, false);
+cxt.lineWidth = 15;
+cxt.strokeStyle = "blue"
+cxt.stroke();
+
+cxt.beginPath();
+cxt.arc(200, 200, 100, 1.1 * Math.PI, 1.9* Math.PI, false);
+cxt.lineWidth = 15;
+cxt.strokeStyle = "red"
+cxt.stroke();
+
+cxt.beginPath();
+cxt.arc(400, 400, 100, 0,  Math.PI*2, false);
+cxt.closePath();
+cxt.strokeStyle = "black"
+cxt.stroke();
+
+cxt.beginPath();
+cxt.ellipse(600, 600, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
+cxt.lineWidth = 15;
+cxt.strokeStyle = "orange";
+cxt.stroke();
+
+cxt.beginPath();
+cxt.moveTo(188, 150);
+cxt.quadraticCurveTo(288, 0, 388, 150);
+cxt.lineWidth = 10;
+
+cxt.strokeStyle = "black";
+cxt.stroke();
+
+</script>
+</body>
+</html>

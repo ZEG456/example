@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="200" stlye="border:1px solid #d3d3d3;"></canvas>
+<script>
+/*let c = document.getElementById("myCanvas");
+let cxt = c.getContext("2d");
+cxt.fillStyle ="#ff0000";
+cxt.fillRect(0, 0, 75,75);
+cxt.fillStyle ="#00ff00";
+cxt.fillRect(10, 10, 75,75);
+cxt.fillStyle ="#0000ff";
+cxt.fillRect(20, 20, 75,75);*/
+let c = document.getElementById("myCanvas");
+let cxt = c.getContext("2d");
+cxt.strokeStyle = "red";
+cxt.fillStyle = "blue";
+cxt.lineWidth = 6;
+cxt.strokeRect(50, 40, 100, 100);
+cxt.fillRect(50, 40, 100, 100);
+</script>
+
+</body>
+</html>

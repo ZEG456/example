@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Power</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: orange;
+			color: blue;
+			font-size: 50px;
+		}
+		p{
+			background-color: blue;
+			color: orange;
+		}
+	</style>
+</head>
+<body>
+<p>Розрахунок степені</p>
+<script type="text/javascript">
+	let a=+prompt("Введіть а","");
+	let n=+prompt("Введіть n","");
+	if(isNaN(a)||isNaN(n)) {
+		document.write("Введьте числа"+"<br>")
+	}
+	document.write("Число "+a+"<br>")
+	document.write("Степінь "+n+"<br>")
+	let power=1;
+	for(let i=1; i<=n;i++){
+		power=power*a;
+	}
+     </script>
+</body>
+</html>
